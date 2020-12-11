@@ -1,9 +1,14 @@
 import 'package:flutter/material.dart';
+class HomePage extends StatefulWidget {
+  static final String id = 'home_page';
+  @override
+  _HomePageState createState() => _HomePageState();
+}
 
-class HomePage extends StatelessWidget {
+class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return   Scaffold(
       appBar: AppBar(
         title: Text('UI'),
         centerTitle: true,
@@ -27,3 +32,4 @@ class HomePage extends StatelessWidget {
     );
   }
 }
+
